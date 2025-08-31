@@ -1,0 +1,94 @@
+{
+  "common":
+    {
+      "error": "An error accured!",
+      "ok": "OK",
+      "cancel": "Cancel",
+      "save": "Save",
+      "welcome_back": "Welcome Back",
+      "no_results":"No results found",
+      "loading":"Loading..."
+    },
+  "auth":
+    {
+      "placeholder":{
+        "username":"Enter your user name..",
+        "email":"Enter your email..",
+        "password":"Enter your password.."
+      },
+      "errors": {
+        "invalid_email": "Please enter a valid email",
+        "password_error": "Password must be at least 8 characters"
+      },
+      "success": {
+        "login": "Successfully signed in!",
+        "logout": "Successfully loged out!"
+      },
+      "user_name":"User name",
+      "email": "Email",
+      "login": "Sign In",
+      "password":"Password",
+      "login_Action":"Sign in to access your admin dashboard"
+    },
+  "productPage":
+    {
+      "error_loading":"Error loading product details.",
+      "weight":"Weight",
+      "stock":"Stock",
+      "product_info":"Product Information",
+      "units":"Units",
+      "category":"Category",
+      "reviews":"Reviews",
+      "description":"Description",
+      "sku":"SKU",
+      "customer_Rev":"Customer Reviews"
+    },
+  "dashboard":
+    {
+      "dashboard": "Dashboard",
+      "products": "Products",
+      "orders": "Orders",
+      "customers": "Customers",
+      "analytics": "Analytics",
+      "reports": "Reports",
+      "settings": "Settings",
+      "admin":"Admin",
+      "productsPage":
+        {
+          "placeholder":{
+            "title":"Enter product title..",
+            "category": "Enter category title..",
+            "description": "Enter product description.."
+          },
+          "title":"Title",
+          "description":"Description",
+          "image":"Product image url",
+          "category":"Category",
+          "price":"Price $",
+          "manage_inventory":"Manage your products inventory",
+          "add_product":"Add Product",
+          "filters":"Filters",
+          "search":"Search products by title or brand...",
+          "deletep":"Delete Product",
+          "addp":"Add Product",
+          "editp":"Save edits",
+          "add_newp":"Add new Product",
+          "edit_p":"Edit the Product",
+          "add_newp_title":"Fill in the details to create a new product",
+          "edit_title":"Fill in the details to edit the  product",
+          "sure_delete":"Are you sure you want to delete",
+          "delete_title":"This action cannot be undone. The product will be permanently removed from your inventory."
+        },
+      "productPage":{
+        "back":"Back to products"
+      },
+      "errors": {
+        "add_product": "failed to add product!",
+        "delete_product": "Failed to delete product"
+      },
+      "success": {
+        "add_product": "Successfully added!",
+        "delete_product": "Successfully deleted!"
+      }
+    }
+}
