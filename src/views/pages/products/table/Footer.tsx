@@ -39,13 +39,13 @@ const TableFooter = ({
                     <button className="px-3 py-1 rounded-md text-gray-600 hover:bg-gray-100" onClick={() => setCurrentPage(1)} disabled={currentPage === 1}>
                         First
                     </button>
-                    <button className="px-3 py-1 rounded-md text-gray-600 hover:bg-gray-100" onClick={handlePrev} disabled={currentPage === 1}>
+                    <button className=" cursor-pointer px-3 py-1 rounded-md text-gray-600 hover:bg-gray-100" onClick={handlePrev} disabled={currentPage === 1}>
                         <FiChevronLeft className="w-4 h-4" />
                     </button>
                     <span className="px-3 py-1 rounded-md bg-orange-500 text-white text-sm font-semibold">
                         {currentPage}
                     </span>
-                    <button className="px-3 py-1 rounded-md text-gray-600 hover:bg-gray-100" onClick={handleNext} disabled={!hasNextPage}>
+                    <button className=" cursor-pointer px-3 py-1 rounded-md text-gray-600 hover:bg-gray-100" onClick={handleNext} disabled={!hasNextPage}>
                         <FiChevronRight className="w-4 h-4" />
                     </button>
                     <button className="px-3 py-1 rounded-md text-gray-600 hover:bg-gray-100" onClick={() => data?.pages ? setCurrentPage(Math.ceil(totalProducts / productsPerPage)) : null} disabled={!hasNextPage}>

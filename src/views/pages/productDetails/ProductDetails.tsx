@@ -2,7 +2,7 @@ import { productsApi } from "@/apis/products/products.api";
 import type { Product } from "@/dtos/products.dto";
 import { useQuery } from "@tanstack/react-query";
 import { t } from "i18next";
-import { FiArrowLeft } from "react-icons/fi";
+import { FiArrowLeft, FiLoader } from "react-icons/fi";
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import RButton from "@/RComponents/RButton";
@@ -27,7 +27,7 @@ const ProductDetails = () => {
     };
 
     if (GetProduct.isLoading) {
-        return <div className="p-10 flex h-screen w-full justify-center items-center">{t("common.loading")}</div>;
+        return <div className="p-10 flex h-screen w-full justify-center items-center"><FiLoader size={70} className="animate-spin"/></div>;
     }
 
     if (GetProduct.isError || !GetProduct.data) {

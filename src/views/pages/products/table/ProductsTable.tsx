@@ -90,7 +90,7 @@ const ProductsTable = ({
                     </tr>
                 </thead>
                 {/* --------------------------body---------------------------- */}
-                { searchQuery.isLoading ?
+                { searchQuery.isLoading || isLoading ?
                     <tr className="h-20">
                         <td colSpan={5} className="p- text-center text-gray-500 bg-amber-50">
                         <FiLoader size={50} className="m-auto animate-spin"/> 
