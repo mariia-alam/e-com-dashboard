@@ -26,7 +26,7 @@ const ProductsTable = ({
 
 
     const productsPerPage = 10;
-    const currentProducts = data?.pages?.[currentPage - 1]?.products ?? [];
+    // const currentProducts = data?.pages?.[currentPage - 1]?.products ?? [];
     const totalProducts = data?.pages?.[0]?.total || 0;
 
     const handleNext = () => {

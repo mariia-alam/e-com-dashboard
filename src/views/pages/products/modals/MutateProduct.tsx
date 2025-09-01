@@ -1,6 +1,5 @@
 import { queryClient } from "@/configs/queryClient";
 import type { ProductResponse } from "@/dtos/products.dto";
-import { cn } from "@/lib/utils";
 import RButton from "@/RComponents/RButton";
 import RInput from "@/RComponents/RInput";
 import type { AddProductProps } from "@/types";
