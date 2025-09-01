@@ -84,10 +84,12 @@
       },
       "errors": {
         "add_product": "failed to add product!",
+        "edit_product": "failed to update product!",
         "delete_product": "Failed to delete product"
       },
       "success": {
         "add_product": "Successfully added!",
+        "edit_product": "Successfully updated!",
         "delete_product": "Successfully deleted!"
       }
     }

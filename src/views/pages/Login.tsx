@@ -100,7 +100,26 @@ function Login() {
                         </p>
                     )} 
                 </div>
-                <p className="text-gray-400">Demo credentials:  eve.holt@reqres.in  |  cityslicka</p>
+                <p className="text-gray-400">Demo credentials:
+                    <a 
+                        className="mx-2"
+                        onClick={() => {
+                            navigator.clipboard.writeText("eve.holt@reqres.in");
+                            toast.success("Coppied!");
+                        }}
+                    >
+                        eve.holt@reqres.in
+                    </a>
+                    <a
+                        className="mx-2"
+                        onClick={() => {
+                            navigator.clipboard.writeText("cityslicka");
+                            toast.success("Coppied!");
+                        }}
+                    >
+                        cityslicka
+                    </a>
+                </p>
                 {/* -----------------------actions--------------------------- */}
                 <RButton
                 className={cn("h-11 text-background gradient-bg bg-gradient-to-r")}

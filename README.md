@@ -15,8 +15,8 @@ This is a modern E-Commerce Admin Dashboard built with React, Zustand, and React
 Clone the repository:
 
 ```bash
-git clone <your-repo-url>
-cd <your-project-folder>
+git clone https://github.com/mariia-alam/e-com-dashboard.git
+cd e-com-dashboard
 ```
 
 Install dependencies:
@@ -44,13 +44,3 @@ npm run build
 ```
 
 The production-ready files will be generated in the `dist` folder.
-
-## Notes
-
-* No Redux is used; state is managed with Zustand.
-* Only the provided APIs are used; no custom backend.
-* Mock authentication only; no authentication libraries used.
-
-## License
-
-MIT

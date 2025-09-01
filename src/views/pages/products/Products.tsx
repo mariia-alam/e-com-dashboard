@@ -75,7 +75,7 @@ function Products() {
             productsApi.UpdateProduct(id, payload),
         onSuccess: (data) => {
             console.log(data)
-            toast.success(t("dashboard.success.add_product"), {
+            toast.success(t("dashboard.success.edit_product"), {
                 style: {
                     borderRadius: "12px",
                     fontWeight: "600",
@@ -84,7 +84,7 @@ function Products() {
             
         },
         onError: (error: any) => {
-            toast.error(("dashboard.errors.add_product"), {
+            toast.error(("dashboard.errors.edit_product"), {
                 style: {
                     borderRadius: "12px",
                     fontWeight: "600",

@@ -75,7 +75,6 @@ const MutateProduct = ({
                 price: data?.price,
                 category: data?.category,
                 thumbnail: data?.thumbnail,
-                id: data?.id
             };
             editProductMutation?.mutate({ id: data.id, payload: editPayload },{
                 onSuccess: ()=>{
