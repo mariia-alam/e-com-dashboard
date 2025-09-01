@@ -1,9 +1,12 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import Products from "@/views/pages/products/Products";
-import Login from "@/views/pages/Login";
-import DashboardLayout from "@/layouts/DashboardLayout";
-import ComingSoon from "@/views/pages/ComingSoon";
-import ProductDetails from "@/views/pages/productDetails/ProductDetails";
+import { lazy } from "react";
+
+// lazy imports
+const Products = lazy(() => import("@/views/pages/products/Products"));
+const Login = lazy(() => import("@/views/pages/Login"));
+const DashboardLayout = lazy(() => import("@/layouts/DashboardLayout"));
+const ComingSoon = lazy(() => import("@/views/pages/ComingSoon"));
+const ProductDetails = lazy(() => import("@/views/pages/productDetails/ProductDetails"));
 
 
 const router = createBrowserRouter([
@@ -13,19 +16,31 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <Login />,
+    element: (
+        <Login />
+    ),
   },
   {
     path: "/products",
-    element: <DashboardLayout> <Products/> </DashboardLayout>
+    element: (
+        <DashboardLayout>
+          <Products />
+        </DashboardLayout>
+    ),
   },
   {
-    path: `/products/:id`,
-    element: <DashboardLayout> <ProductDetails/> </DashboardLayout>
+    path: "/products/:id",
+    element: (
+        <DashboardLayout>
+          <ProductDetails />
+        </DashboardLayout>
+    ),
   },
   {
     path: "*",
-    element : <ComingSoon/>
+    element: (
+        <ComingSoon />
+    ),
   },
 ]);
 
